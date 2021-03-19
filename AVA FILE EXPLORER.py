@@ -2,8 +2,10 @@ from tkinter import *
 from PIL import ImageTk, Image
 import shutil
 import os
+
 import easygui
 import pygame
+
 
 
 from tkinter import filedialog
@@ -131,17 +133,20 @@ Label(root, text="Created by Vaibhav, Anusha ,Aditi", font=("Helvetica 10 bold")
 Label(root, text="  AVA File Explorer Menu     ", font=("Helvetica 16 bold"), fg="black", padx="100", pady="30", bg="gray"
       , relief=RAISED, borderwidth="10").grid(row=5, column=2)
 
+
 Button(root, text="Open a File", command=open_file, padx="20", pady="5", borderwidth="10", bg="black", fg="white",
        font=("Helvetica 16 bold")).grid(row=15, column=2)
 
 Button(root, text="Copy a File", command=copy_file, padx="20", pady="5", borderwidth="10", bg="black", fg="white",
        font=("Helvetica 16 bold")).grid(row=25, column=2)
 
+
 Button(root, text="Delete a File", command=delete_file, padx="20", pady="5", borderwidth="10", bg="black", fg="white",
        font=("Helvetica 16 bold")).grid(row=35, column=2)
 
 Button(root, text="Rename a File", command=rename_file, padx="20", pady="5", borderwidth="10", bg="black", fg="white",
        font=("Helvetica 16 bold")).grid(row=45, column=2)
+
 
 Button(root, text="Move a File", command=move_file, padx="20", pady="5", borderwidth="10", bg="black", fg="white",
        font=("Helvetica 16 bold")).grid(row=55, column=2)
